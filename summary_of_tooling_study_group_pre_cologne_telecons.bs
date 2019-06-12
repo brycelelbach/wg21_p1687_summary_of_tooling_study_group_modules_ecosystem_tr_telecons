@@ -1,0 +1,129 @@
+<!--
+Copyright (c) 2018 NVIDIA Corporation 
+Author: Bryce Adelstein Lelbach <brycelelbach@gmail.com>
+
+Distributed under the Boost Software License v1.0 (boost.org/LICENSE_1_0.txt)
+-->
+<pre class='metadata'>
+Title: Summary of the Tooling Study Group's Pre-Cologne Telecons on Modules Tooling Interactions
+Shortname: D1687
+Revision: 0
+Status: D
+Group: WG21
+Audience: EWG, SG15
+Editor: Bryce Adelstein Lelbach, NVIDIA, brycelelbach@gmail.com
+Editor: Ben Craig, ben.craig@gmail.com
+URL: https://wg21.link/P1455R0
+!Source: <a href="https://github.com/brycelelbach/wg21_p1687_summary_of_tooling_study_group_pre_cologne_telecons/blob/master/summary_of_tooling_study_group_pre_cologne_telecons.bs">GitHub</a>
+Issue Tracking: GitHub https://github.com/brycelelbach/wg21_p1687_summary_of_tooling_study_group_pre_cologne_telecons/issues
+Metadata Order: Author, This Version, Source, Issue Tracking, Project, Audience
+Markup Shorthands: markdown yes
+Toggle Diffs: no
+No Abstract: yes
+Boilerplate: style-syntax-highlighting off
+</pre>
+
+<style>
+pre {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.ins, ins, ins *, span.ins, span.ins * {
+  background-color: rgb(200, 250, 200);
+  color: rgb(0, 136, 0);
+  text-decoration: none;
+}
+.del, del, del *, span.del, span.del * {
+  background-color: rgb(250, 200, 200);
+  color: rgb(255, 0, 0);
+  text-decoration: line-through;
+  text-decoration-color: rgb(255, 0, 0);
+}
+math, span.math {
+  font-family: serif;
+  font-style: italic;
+}
+ul {
+  list-style-type: "— ";
+}
+blockquote {
+  counter-reset: paragraph;
+}
+div.numbered, div.newnumbered {
+  margin-left: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+div.numbered:before, div.newnumbered:before {
+  position: absolute;
+  margin-left: -2em;
+  display-style: block;
+}
+div.numbered:before {
+  content: counter(paragraph);
+  counter-increment: paragraph;
+}
+div.newnumbered:before {
+  content: "�";
+}
+div.numbered ul, div.newnumbered ul {
+  counter-reset: list_item;
+}
+div.numbered li, div.newnumbered li {
+  margin-left: 3em;
+}
+div.numbered li:before, div.newnumbered li:before {
+  position: absolute;
+  margin-left: -4.8em;
+  display-style: block;
+}
+div.numbered li:before {
+  content: "(" counter(paragraph) "." counter(list_item) ")";
+  counter-increment: list_item;
+}
+div.newnumbered li:before {
+  content: "(�." counter(list_item) ")";
+  counter-increment: list_item;
+}
+</style>
+
+# Introduction # {#introduction}
+
+At the ISO C++ Kona 2019 meeting, the ISO C++ Committee's Tooling Study Group,
+  SG15, met to discuss concerns raised by various stakeholders about how
+  modules would impact and interact with the broader C++ ecosystem (build
+  systems, tools, other languages, etc).
+During that discussion, SG15 reached a consensus that the best way to prepare
+  the C++ community for modules and ensure a smooth transition to modules over
+  the next decade would be to prepare a C++ Ecosystem Technical Report on
+  modules.
+
+Since that meeting, the Tooling Study Group has held a series of telecons to 
+  plan, discuss, and brainstorm ideas for the proposed Technical Report.
+One of the outcomes of these telecons is <a href="https://wg21.link/P1688">P1688</a>,
+  an outline and high-level design for the proposed Technical Report.
+
+This document contains a summary and detailed minutes for each of the telecons.
+
+# Summary of Meetings # {#summary-of-meetings}
+
+TODO: Table
+
+# Meeting Minutes # {#meeting-minutes}
+
+## 2019-03-08 Meeting Minutes ## {#meeting-minutes-2019-03-08}
+
+## 2019-03-22 Meeting Minutes ## {#meeting-minutes-2019-03-22}
+
+## 2019-04-05 Meeting Minutes ## {#meeting-minutes-2019-04-05}
+
+## 2019-04-12 Meeting Minutes ## {#meeting-minutes-2019-04-12}
+
+## 2019-04-26 Meeting Minutes ## {#meeting-minutes-2019-04-26}
+
+## 2019-05-10 Meeting Minutes ## {#meeting-minutes-2019-05-10}
+
+## 2019-05-24 Meeting Minutes ## {#meeting-minutes-2019-05-24}
+
+## 2019-06-07 Meeting Minutes ## {#meeting-minutes-2019-06-07}
+
