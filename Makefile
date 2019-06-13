@@ -1,3 +1,8 @@
+# Copyright (c) 2018-2019 NVIDIA Corporation 
+# Author: Bryce Adelstein Lelbach <brycelelbach@gmail.com>
+#
+# Distributed under the Boost Software License v1.0 (boost.org/LICENSE_1_0.txt)
+
 BUILDDIR = build
 
 all: remote
