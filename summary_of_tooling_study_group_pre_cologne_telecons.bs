@@ -700,7 +700,7 @@ This document contains a summary and detailed minutes for each of the telecons.
 - JF Bastien.
 - Ben Boeckel.
 - Bruno Lopes.
-- Gabriel Dos Reis [Gabby] (Microsoft).
+- Gabriel Dos Reis [Gaby] (Microsoft).
 - Isabella Muerte [Izzy].
 - JF Bastien.
 - Mark Zeren.
@@ -757,11 +757,11 @@ This document contains a summary and detailed minutes for each of the telecons.
 
 - Mathias: Module naming and granularity could be folded into other things.
 - Bryce: At one point, it was combined.
-- Gabby: That's more of a coding guidelines, not clear to me that it belongs here..
+- Gaby: That's more of a coding guidelines, not clear to me that it belongs here..
 - Mathias: It does have performance tradeoffs, particularly when switching between library sized vs. header sized modules..
 
 - Izzy: This should be for general guidelines, because we could probably convince (for example) the Bloomberg people that it should be one class per partition vs. one class per module.
-- Gabby: Hoping the TR isn't just a set of guidelines.  It can't have the force of a standard, but should be more than just a guideline.
+- Gaby: Hoping the TR isn't just a set of guidelines.  It can't have the force of a standard, but should be more than just a guideline.
  
 - Izzy: Maybe put something in the core guidelines for granularity.
 - Mathias: Should have data to back that up.
@@ -785,14 +785,14 @@ This document contains a summary and detailed minutes for each of the telecons.
 - Ben B: Wouldn't be any provides.
 
 - Mathias: Provides arrays might be useful if we come up with a multi-module format for distribution.
-- Gabby: Just a matter of time before we can make multiple modules from one file in C++.
+- Gaby: Just a matter of time before we can make multiple modules from one file in C++.
 - Mathias: Nathan Sidwell is looking to provide extensions along these lines.
 
 - Bryce: This doesn't mention the BMIs configuration.
 - Ben B: It does not.
-- Gabby: This is the output of the scanning phase? And it could be input to a build definition?
+- Gaby: This is the output of the scanning phase? And it could be input to a build definition?
 - Ben B: It could be.
-- Gabby: Just trying to be clear on which phase of the build this comes up.
+- Gaby: Just trying to be clear on which phase of the build this comes up.
 
 - Mathias: Concerned that the compiler is telling the consumer where files are going, rather than the other way around.
 - Ben B: The directory came from an initial compiler invocation string.
@@ -818,7 +818,7 @@ This document contains a summary and detailed minutes for each of the telecons.
 
 - Izzy: Letting the compiler pick file locations made it very difficult to build things in a performant way. Had to do lots of docker work to fix that in a past project.
 
-- Gabby: It's not a design flaw in GCC that it outputs things by default.
+- Gaby: It's not a design flaw in GCC that it outputs things by default.
 
 - Olga: Traditionally all build systems are explicit about the outputs.
 - Olga: Would like to focus on the 'provides' and 'requires'. Don't want 'depends' to be required. Want a special mode that has less information for performance.
@@ -834,7 +834,7 @@ This document contains a summary and detailed minutes for each of the telecons.
 - Bryce: Without data, I'm hesitant to raise this as an issue.
 - Olga: Not just planning on using this for builds, but other operations like IDEs. Speed is really critical there since it is interactive.
 
-- Gabby: Have you seen how long it takes to output the information?
+- Gaby: Have you seen how long it takes to output the information?
 - Ben B: No, haven't measured performance yet.
 
 - Olga: It's not just producing the json, but parsing the source to get that information.
@@ -842,7 +842,7 @@ This document contains a summary and detailed minutes for each of the telecons.
 - Ben B: Note that scanning doesn't need to do full preprocessing.
 - Spencer: In a few days I'll be giving a talk on dep scanning for modules. Scanning then doing an explicit build is faster than doing an implicit build.
 
-- Gabby: Would like a specification as to what is meant when we say scanning.
+- Gaby: Would like a specification as to what is meant when we say scanning.
 - Bryce: Different applications may need different amounts of scanning.
 
 - Ben C: Getting a skeleton spec is blocking things.
@@ -861,8 +861,8 @@ This document contains a summary and detailed minutes for each of the telecons.
 - Bryce: Amount of startup overhead is a concern. We can reuse what the standard is already using.
 - Bryce: I have used restructured text recently, maybe that is an option.
 
-- Bryce: Volunteering Ben C and Gabby on helping with Github. Izzy for RST things.
-- Gabby: Can we reuse the C++ github?
+- Bryce: Volunteering Ben C and Gaby on helping with Github. Izzy for RST things.
+- Gaby: Can we reuse the C++ github?
 - Bryce: Will check with Herb.
 
 ## 2019-04-12 Meeting Minutes ## {#meeting-minutes-2019-04-12}
@@ -1085,7 +1085,7 @@ This document contains a summary and detailed minutes for each of the telecons.
 
 - Ben Craig.
 - Ben Boeckel.
-- Gabriel Dos Reis [Gabby] (Microsoft).
+- Gabriel Dos Reis [Gaby] (Microsoft).
 - JF Bastien.
 - Lukasz Menakiewicz (Microsoft).
 - Olga Arhipova (Microsoft).
@@ -1104,7 +1104,7 @@ This document contains a summary and detailed minutes for each of the telecons.
 - Nathan: Ill-formed, only when you try to import the wrong one.
 
 - Corentin: Build system can give diagnostics if you have two modules with the same name in the same dependency graph.
-- Gabby: You can have conflicts within an organization.
+- Gaby: You can have conflicts within an organization.
 
 - Nathan: We also have this collision problem with namespaces. That doesn't seem to be a problem that requires vendor specific namespaces. Why do we thing this will be a bigger problem with modules?
 - Ben B: One thing we do with our third party packages is mangle the packages. We change the names of the shared library and of the dynamic symbols.
@@ -1179,7 +1179,7 @@ This document contains a summary and detailed minutes for each of the telecons.
 - Matthew Woehlke.
 - Mathias Stearn.
 - Stephen Kelly.
-- Gabriel Dos Reis [Gabby] (Microsoft).
+- Gabriel Dos Reis [Gaby] (Microsoft).
 - Richard Smith.
 - Lukas (Microsoft).
 - Mark Zeren.
@@ -1207,7 +1207,7 @@ This document contains a summary and detailed minutes for each of the telecons.
 - Mathias: Didn't quite mean that.
 - Lukasz: But we do want to have a close parallel between Intellisense and build.
 
-- Gabby: For the Microsoft pre-distributed BMIs, we always provide the source as well.
+- Gaby: For the Microsoft pre-distributed BMIs, we always provide the source as well.
 
 - Richard: Clang has a language server protocol (LSP). If you ask the build compiler questions through LSP, you avoid cross compiler requirements.
 - Mathias: LSP as the main communication mechanism has me concerned. Even in the clang tooling world, there are three different protocols. Would be odd if those needed to use LSP then talk to another compiler,.
@@ -1219,7 +1219,7 @@ This document contains a summary and detailed minutes for each of the telecons.
 - Lukasz: Different optimization approaches for build compiler vs. intellisense. Throughput vs. responsiveness. Engineering cost wise, it is harder to use one compiler for everything.
 - Olga: using portion of MSVC compiler for intellisense until 2010, and it was painful.
 - Richard: This does resonate with Mathias's concerns, that sharing a file format may not make sense between the different concerns.
-- Gabby: The scenario isn't that they want to reuse the contents of the BMI in the way the codegen would, but they do want to look at the structures and idioms that are exported. Suspect they are looking for ways to extract that from the BMI. The expectation is that this information is in all the formats. They are just trying to get at this precomputed information.
+- Gaby: The scenario isn't that they want to reuse the contents of the BMI in the way the codegen would, but they do want to look at the structures and idioms that are exported. Suspect they are looking for ways to extract that from the BMI. The expectation is that this information is in all the formats. They are just trying to get at this precomputed information.
 - Richard: That's a useful perspective. To a certain extent, it's something more similar to LSP style analysis, maybe that's the wrong model for this though. Some way that not every tool needs to know about every other tools format.
 
 - Tom: For Coverity, the content and the structure is very compiler specific. We use one front end to emulate lots of compiler versions. BMI distribution being compiler version specific is tough for us because we are a floating compiler version. We'd need stability across versions. If we could extract things like the command line and source files used to make the BMI, then that would be useful for us, so that we could make a compatible invocation?
@@ -1229,7 +1229,7 @@ This document contains a summary and detailed minutes for each of the telecons.
 
 - Tom: Also unsure about sharing information across clang and gcc. Lots of implementation dependent information than can get encoded. Not sure how that information can be made compatible across compilers. How does one compiler consume an intrinsic from another.
 
-- Gabby: Primary goal from Olga and Lukasz is to have a mechanism to extract already computed information. Not a goal to share a format that is shared. If you want to go in that direction, then we aren't equipped for that yet. Being able to invoke the compiler or a compiler provided tool to extract that information may be enough. Just need to define what that thing is, may be a tool.
+- Gaby: Primary goal from Olga and Lukasz is to have a mechanism to extract already computed information. Not a goal to share a format that is shared. If you want to go in that direction, then we aren't equipped for that yet. Being able to invoke the compiler or a compiler provided tool to extract that information may be enough. Just need to define what that thing is, may be a tool.
 
 - Bryce: Is there some common set of queries that are useful that everyone wants to ask of a BMI that all implementations can provide?
 
@@ -1257,7 +1257,7 @@ This document contains a summary and detailed minutes for each of the telecons.
 
 - Tom: Add to your list, need to know the current working directory and env of the compiler when invoked. Those are the kinds of things that we tend to capture when analyzing a build.
 - Olga: Right, those should be part of the "options" and not the "switches".
-- Gabby: Please send that list to the mailing list.
+- Gaby: Please send that list to the mailing list.
 
 - David: you still have two tools parsing the code. Sometimes you gather everything with a compiler shim to harvest commands.
 - Tom: We don't use a shim, we monitor processes being launched.
@@ -1287,7 +1287,7 @@ Attendance:
 - Ben Craig.
 - Corentin Jabot.
 - David Blaikie.
-- Gabriel Dos Reis [Gabby] (Microsoft).
+- Gabriel Dos Reis [Gaby] (Microsoft).
 - JF Bastien.
 - Lukasz Menakiewicz (Microsoft).
 - Mathias Stearn.
@@ -1338,28 +1338,28 @@ Attendance:
 
 - Bryce: Would be nice if it were easy to explicitly control what model they got.
 
-- Gabby: clang-cl and MSVC compat is a discussion going on internally. We've been talking with Richard.
-- Gabby: Clang has experience with implicit module builds, but msvc doesn't. The MSVC implementation of the TS assumes explicit builds. May be ok for usage at scale, but isn't necessarily good for small examples. Is there any way that clang people could write an experience paper?
+- Gaby: clang-cl and MSVC compat is a discussion going on internally. We've been talking with Richard.
+- Gaby: Clang has experience with implicit module builds, but msvc doesn't. The MSVC implementation of the TS assumes explicit builds. May be ok for usage at scale, but isn't necessarily good for small examples. Is there any way that clang people could write an experience paper?
 
 - Michael: Gave a talk at LLVM Euro. I don't know what you are looking for in terms of how that model looks.
-- Gabby: Interaction with build systems. The implicit build may conflict with the build system, especially around caching.
+- Gaby: Interaction with build systems. The implicit build may conflict with the build system, especially around caching.
 - Michael: Should generally be hidden. From build systems.
-- Gabby: Scalability?
+- Gaby: Scalability?
 - Michael: There are issues, I think a CppCon talk about it.
 
 - Bryce: Some implementations want distributing, some do not want people to do that. Do we think it's a problem that there is divergence. Is that fine?
 
-- Gabby: There's a notion of reusing which could just be for a given compiler release. Can I reuse those. That's separate from distribution of artifacts that will outlive the current compiler series.
+- Gaby: There's a notion of reusing which could just be for a given compiler release. Can I reuse those. That's separate from distribution of artifacts that will outlive the current compiler series.
 
 - Bryce: If I'm a user of MSVC using C++20, is your advice that I shouldn't ship BMIs for my common configurations, or is that fine?
 
-- Gabby: Current advice is that for a given compiler release it's ok, so we can avoid rebuilding everything repeatedly. But you should also ship the source code. Even when the format of the BMI is published, we will still recommend that source code be distributed.
+- Gaby: Current advice is that for a given compiler release it's ok, so we can avoid rebuilding everything repeatedly. But you should also ship the source code. Even when the format of the BMI is published, we will still recommend that source code be distributed.
 
 - Bryce: For clang, must have the source code for the interface unit.
 
 - JF: Three ways to distribute modules. Pure source. Make internal format stable. Or intermediate where some is stable and some is not. For example, description of struct is described in a stable way. With C++, that ends up being an awful lot of stuff though. So technically possible to have a binary module attached with pared down version of the source code, but that is pretty big. There's a talk by swift people about how they are doing it (https://developer.apple.com/videos/play/wwdc2019/416/ ). We don't want to serialize the AST. It's possible, but it's big and may have more than you want.
 
-- Gabby: I don't know if the size is that big or not. I'm not deterred by the size at this point. I'm more interested in the ability of developers to not need to recompile the same thing repeatedly.
+- Gaby: I don't know if the size is that big or not. I'm not deterred by the size at this point. I'm more interested in the ability of developers to not need to recompile the same thing repeatedly.
 - JF: What I'm talking about allows for that. The expensive part isn't source -> ast, but ast -> compiled stuff. You save a bit of time using AST, but you don't save the expensive part. Would like to see tools that pare down what is exported. The big things may not just be lots of bytes, but more things than you would expect, and you'll see unexpected things.
 
 - Mathias: How does the size compare to headers? Will it be larger or roughly the same.
@@ -1372,7 +1372,7 @@ Attendance:
 
 - Bryce: The implementers are all saying you must distribute some form of source, and that you can provide interfaces as an optimization.
 
-- Gabby: Your summary is fantastic Corentin. This is why we need to split the discussion into distribution and reuse. Guaranteeing compatibility has a big cost, but we still want to be able to enable reuse.
+- Gaby: Your summary is fantastic Corentin. This is why we need to split the discussion into distribution and reuse. Guaranteeing compatibility has a big cost, but we still want to be able to enable reuse.
 
 - Bryce: What is the clang / llvm plan for distributing default module maps. C++ implementation may not be well suited to do, but the OS is in a good position to do. What are vendors going to need to do to modularize themselves.
 
@@ -1386,7 +1386,7 @@ Attendance:
 
 - JF: Question is whether modules is worth their time. My concern is that no one will attend, or that they will make something slightly incompatible. If we don't participate, incompatibilities are very likely.
 
-- Gabby: I'm nervous about C taking things from C++ without modifying them. All the prior cases resulted in modifications except for // comments.
+- Gaby: I'm nervous about C taking things from C++ without modifying them. All the prior cases resulted in modifications except for // comments.
 
 - Stephen K: Packaging and libc, distributors would need to provide module map files. All the maps needed the same name... how would that work. Clang can look for them implicitly, but clang allows you to name module maps on the command line. Not sure that module maps are where we want to go, that's something that SG15 should discuss.
 
