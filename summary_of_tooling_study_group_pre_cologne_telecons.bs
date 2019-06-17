@@ -6,14 +6,14 @@ Distributed under the Boost Software License v1.0 (boost.org/LICENSE_1_0.txt)
 -->
 <pre class='metadata'>
 Title: Summary of the Tooling Study Group's Pre-Cologne Telecons on Modules Tooling Interactions
-Shortname: D1687
+Shortname: P1687
 Revision: 0
-Status: D
+Status: P
 Group: WG21
 Audience: EWG, SG15
 Editor: Bryce Adelstein Lelbach, NVIDIA, brycelelbach@gmail.com
 Editor: Ben Craig, ben.craig@gmail.com
-URL: https://wg21.link/P1455R0
+URL: https://wg21.link/D1687R0
 !Source: <a href="https://github.com/brycelelbach/wg21_p1687_summary_of_tooling_study_group_pre_cologne_telecons/blob/master/summary_of_tooling_study_group_pre_cologne_telecons.bs">GitHub</a>
 Issue Tracking: GitHub https://github.com/brycelelbach/wg21_p1687_summary_of_tooling_study_group_pre_cologne_telecons/issues
 Metadata Order: Author, This Version, Source, Issue Tracking, Project, Audience
@@ -228,10 +228,7 @@ This document contains a summary and detailed minutes for each of the telecons.
 
 **Chair Notes (Bryce Adelstein Lelbach):**
 
-- For the purpose of our discussions, let's assume that a ISO Technical Report
-    is the right type of document.
-  If we find that this type of document doesn't meet what we need, we'll use
-    another type of document.
+- For the purpose of our discussions, let's assume that a ISO Technical Report is the right type of document. If we find that this type of document doesn't meet what we need, we'll use another type of document.
 - When should we aim to have the Technical Report completed?
   - When C++20 is published?
   - After C++20 is published?
@@ -821,7 +818,7 @@ This document contains a summary and detailed minutes for each of the telecons.
 - Gaby: It's not a design flaw in GCC that it outputs things by default.
 
 - Olga: Traditionally all build systems are explicit about the outputs.
-- Olga: Would like to focus on the 'provides' and 'requires'. Don't want 'depends' to be required. Want a special mode that has less information for performance.
+- Olga: Would like to focus on the "provides" and "requires". Don't want "depends" to be required. Want a special mode that has less information for performance.
 - Ben B: flag for minimal information would be fine, but that file wouldn't be useful for some build tools.
 
 - Mathias: Why would a build tool need anything besides provides and requires.
@@ -1376,7 +1373,7 @@ Attendance:
 
 - Bryce: What is the clang / llvm plan for distributing default module maps. C++ implementation may not be well suited to do, but the OS is in a good position to do. What are vendors going to need to do to modularize themselves.
 
-- Richard: Assume something like clang's module map system. You need some kind of file accompanying a package that says which headers are to be treated as header units. Any side information you need to build in that mode will be there. GLIBC in particular has information that varies slightly between version, as info moves into and out of 'bits' headers. We don't think the compiler is in a good position to distribute module description files for glibc, because we would need different ones for different versions, and need to know which one you have on a given machine. glibc would need to provide that data. We may be able to provide examples so that distributions could provide that. Hoping there will be sufficient adoption and cross vendor description compat so that packages can provide that information themselves.
+- Richard: Assume something like clang's module map system. You need some kind of file accompanying a package that says which headers are to be treated as header units. Any side information you need to build in that mode will be there. GLIBC in particular has information that varies slightly between version, as info moves into and out of "bits" headers. We don't think the compiler is in a good position to distribute module description files for glibc, because we would need different ones for different versions, and need to know which one you have on a given machine. glibc would need to provide that data. We may be able to provide examples so that distributions could provide that. Hoping there will be sufficient adoption and cross vendor description compat so that packages can provide that information themselves.
 
 - Mathias: Has there been any discussion with wg14 about C modules so that we have a good compat story with their library.
 
