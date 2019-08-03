@@ -10,11 +10,10 @@ Shortname: P1687
 Revision: 1
 Status: P
 Group: WG21
-Audience: EWG, SG15
+Audience: EWG, SG2, SG15
 Editor: Bryce Adelstein Lelbach, NVIDIA, brycelelbach@gmail.com
 Editor: Ben Craig, ben.craig@gmail.com
 URL: https://wg21.link/P1687R1
-Previous Version: https://wg21.link/P1687R0
 !Source: <a href="https://github.com/brycelelbach/wg21_p1687_summary_of_tooling_study_group_modules_ecosystem_tr_telecons/blob/master/summary_of_tooling_study_group_modules_ecosystem_tr_telecons.bs">GitHub</a>
 Issue Tracking: GitHub https://github.com/brycelelbach/wg21_p1687_summary_of_tooling_study_group_modules_ecosystem_tr_telecons/issues
 Metadata Order: Author, Previous Version, Source, Issue Tracking, Project, Audience
@@ -247,6 +246,9 @@ This document contains a summary and detailed minutes for each of the telecons.
 </table>
 
 # Meeting Minutes # {#meeting-minutes}
+
+**Minutes omitted from this revision can be found in prior revisions:**
+- <a href="https://wg21.link/P1688R0"><b>P1688R0: 2019-03-08 through 2019-06-07</b></a>.
 
 ## 2019-08-02 Meeting Minutes ## {#meeting-minutes-2019-08-02}
 
