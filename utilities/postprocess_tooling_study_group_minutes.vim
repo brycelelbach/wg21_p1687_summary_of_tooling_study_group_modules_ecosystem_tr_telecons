@@ -28,4 +28,6 @@
 %s/Downey/Steve D/ge
 %s/Stephen Kelly/Stephen K/ge
 %s/Blaikie/David/ge
+%s/Woelke/Matthew W/ge
+%s/Richard Smith/Richard S/ge
 
