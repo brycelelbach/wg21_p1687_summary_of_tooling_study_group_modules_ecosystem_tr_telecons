@@ -248,7 +248,7 @@ This document contains a summary and detailed minutes for each of the telecons.
 # Meeting Minutes # {#meeting-minutes}
 
 **Minutes omitted from this revision can be found in prior revisions:**
-- <a href="https://wg21.link/P1688R0"><b>P1688R0: 2019-03-08 through 2019-06-07</b></a>.
+- <a href="https://wg21.link/P1687R0"><b>P1687R0: 2019-03-08 through 2019-06-07</b></a>.
 
 ## 2019-08-02 Meeting Minutes ## {#meeting-minutes-2019-08-02}
 
