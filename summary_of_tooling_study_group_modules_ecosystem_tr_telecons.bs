@@ -121,7 +121,7 @@ This document contains a summary and detailed minutes for each of the telecons.
 2019-08-02
 <a href="https://wg21.link/P1687R1#meeting-minutes-2019-08-02">Minutes</a>
 <td>
-- <a href="https://wg21.link/P1383">D1383R0: Modules User-Facing Lexicon and
+- <a href="https://wg21.link/P1838">D1838R0: Modules User-Facing Lexicon and
     File Extensions</a>.
 
 <td>
@@ -270,16 +270,16 @@ This document contains a summary and detailed minutes for each of the telecons.
 
 Agenda:
 - 2019-07 Cologne summary:
-  - <a href="http://wiki.edg.com/bin/view/Wg21cologne2019/P1688R0-EWG">EWG review of P1688</a>.
-  - <a href="http://wiki.edg.com/bin/view/Wg21cologne2019/SG15">Friday SG15 session</a>.
+    - <a href="http://wiki.edg.com/bin/view/Wg21cologne2019/P1688R0-EWG">EWG review of P1688</a>.
+    - <a href="http://wiki.edg.com/bin/view/Wg21cologne2019/SG15">Friday SG15 session</a>.
 - 2019-09-21 Denver CppCon meeting.
 - Post-Cologne mailing (2019-08-05):
-  - P1687: Tooling Telecon Minutes (Bryce Adelstein Lelbach, Ben Craig).
-  - P1689: Dependency Information Format (Ben Boeckel).
-  - Generalized Module Mapper (Boris Kolpackov).
-- D1383R0: Modules User-Facing Lexicon and File Extensions.
-  - CMI/BMI bikeshedding.
-  - File extensions.
+    - P1687: Tooling Telecon Minutes (Bryce Adelstein Lelbach, Ben Craig).
+    - P1689: Dependency Information Format (Ben Boeckel).
+    - Generalized Module Mapper (Boris Kolpackov).
+- D1838R0: Modules User-Facing Lexicon and File Extensions.
+    - CMI/BMI bikeshedding.
+    - File extensions.
 
 **POLL: Which names can you tolerate? (Vote as many times as you like)**
 
@@ -328,7 +328,7 @@ Action Items:
 
 - Tom: I do like PCM because it's sort of like precompiled headers.
 
-- Gabby: Because of that, I would go in the opposite direction. Like CMI, since it doesn't need to be stored in a binary form.
+- Gaby: Because of that, I would go in the opposite direction. Like CMI, since it doesn't need to be stored in a binary form.
 
 - Mathias: How do we name the act of generating the BMI / CMI? How do we need to name the act of making an object file?
 
@@ -338,11 +338,11 @@ Action Items:
 - General disagreement on which is more efficient.
 
 - Mathias: Been thinking of obj production as "compiling" and CMI production as extracting.
-- Gabby: Maybe "metadata" instead (module interface metadata?).
+- Gaby: Maybe "metadata" instead (module interface metadata?).
 - Boris: What is meta about it? what is the data?
-- Gabby: Prior art, it's meta in the sense that it isn't the .obj.
+- Gaby: Prior art, it's meta in the sense that it isn't the .obj.
 - Ben B: Module interface cache? Interfaces the transient nature.
-- Gabby: Would need to distinguish the term in caching systems.
+- Gaby: Would need to distinguish the term in caching systems.
 - Ben B: Importable Module Artifact?
 - Boris: We should keep in mind that there are a lot of existing documents that use BMI.
 - If we don't have a significantly better term, we should prefer the status quo.
@@ -385,9 +385,9 @@ Action Items:
 - Ben B: Why does it have to stand for anything? Just call it BMI.
 
 - Bryce: Current status quo is that interface units have a different extension?
-- Gabby: Only the interface has a different extension.
+- Gaby: Only the interface has a different extension.
 
-- Mathias:What are importable implementation units: Named partitions that are not exported Seem to behave more like interface units, because you need a BMI for them For anything that is importable. Even implementation units can be imported. Maybe don't do it at all?
+- Mathias: What are importable implementation units: Named partitions that are not exported Seem to behave more like interface units, because you need a BMI for them For anything that is importable. Even implementation units can be imported. Maybe don't do it at all?
 
 - Gaby: MSVC has distinct extensions to make other tools easier. Can't change Visual Studio to not care about extension.
 
@@ -468,23 +468,23 @@ Action Items:
 **Chair Notes (Bryce Adelstein Lelbach):**
 
 - Agenda:
-  - New mailing list on lists.isocpp.org.
-  - Cologne prep
-    - Who actually sent papers?
-    - Review Ben's Dependency Metadata Paper (P1689).
-    - Review Olga's BMI Distribution Paper (P1788).
-    - Review Richard's Packaging Paper (P1767).
-  - Next (last) Pre-Cologne call is July 5th (reschedule?).
+   - New mailing list on lists.isocpp.org.
+   - Cologne prep
+      - Who actually sent papers?
+      - Review Ben's Dependency Metadata Paper (P1689).
+      - Review Olga's BMI Distribution Paper (P1788).
+     - Review Richard's Packaging Paper (P1767).
+   - Next (last) Pre-Cologne call is July 5th (reschedule?).
 - Pre-Cologne Papers (Send Drafts to sg15@lists.isocpp.org by 2019-06-14):
-  - P1687: Summary and Minutes of Pre-Cologne SG15 Discussions (Bryce, Ben C).
-  - P1688: Ecosystem Technical Report Outline (Bryce).
-  - P1689: Dependency Metadata (Ben B).
-  - P1788: Compiled Module Reuse (Olga, Lukasz).
-  - Module Naming (Corentin Jabot).
-  - Modules Hello World (Gaby).
-  - P1767: Modules and Packaging (Richard).
-  - RFE: (Paper or info on) Implicit Modules (Michael).
-    - Michael gave a talk at LLVM Euro about this.
+   - P1687: Summary and Minutes of Pre-Cologne SG15 Discussions (Bryce, Ben C).
+   - P1688: Ecosystem Technical Report Outline (Bryce).
+   - P1689: Dependency Metadata (Ben B).
+   - P1788: Compiled Module Reuse (Olga, Lukasz).
+   - Module Naming (Corentin Jabot).
+   - Modules Hello World (Gaby).
+   - P1767: Modules and Packaging (Richard).
+   - RFE: (Paper or info on) Implicit Modules (Michael).
+      - Michael gave a talk at LLVM Euro about this.
 
 **Minutes (Ben Craig):**
 
