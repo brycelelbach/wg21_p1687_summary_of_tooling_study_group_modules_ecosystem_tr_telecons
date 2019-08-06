@@ -1,7 +1,6 @@
-<!DOCTYPE html>
-<!-- saved from url=(0031)https://api.csswg.org/bikeshed/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
+<!doctype html><html lang="en">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
   <title>P1687R1: Summary of the Tooling Study Group’s Modules Ecosystem Technical Report Telecons</title>
 <style data-fill-with="stylesheet">/******************************************************************************
@@ -1030,7 +1029,7 @@ Possible extra rowspan handling
 		}
 	/* } */
 
-	@supports (display:grid) and (display:contents) {
+	@supports (display:grid) {
 		/* Use #toc over .toc to override non-@supports rules. */
 		#toc {
 			display: grid;
@@ -1227,68 +1226,11 @@ Possible extra rowspan handling
     th {
       text-align: center;
     }
-
-    del { background: #fcc; color: #000; text-decoration: line-through; }
-    ins { background: #cfc; color: #000; }
-    blockquote .highlight:not(.idl) { background: initial; margin: initial; padding: 0.5em }
-    blockquote ul { background: inherit; }
-    blockquote code.highlight:not(.idl) { padding: initial; }
-    blockquote c-[a] { color: inherit; } /* Keyword.Declaration */
-    blockquote c-[b] { color: inherit; } /* Keyword.Type */
-    blockquote c-[c] { color: inherit; } /* Comment */
-    blockquote c-[d] { color: inherit; } /* Comment.Multiline */
-    blockquote c-[e] { color: inherit; } /* Name.Attribute */
-    blockquote c-[f] { color: inherit; } /* Name.Tag */
-    blockquote c-[g] { color: inherit; } /* Name.Variable */
-    blockquote c-[k] { color: inherit; } /* Keyword */
-    blockquote c-[l] { color: inherit; } /* Literal */
-    blockquote c-[m] { color: inherit; } /* Literal.Number */
-    blockquote c-[n] { color: inherit; } /* Name */
-    blockquote c-[o] { color: inherit; } /* Operator */
-    blockquote c-[p] { color: inherit; } /* Punctuation */
-    blockquote c-[s] { color: inherit; } /* Literal.String */
-    blockquote c-[t] { color: inherit; } /* Literal.String.Single */
-    blockquote c-[u] { color: inherit; } /* Literal.String.Double */
-    blockquote c-[cp] { color: inherit; } /* Comment.Preproc */
-    blockquote c-[c1] { color: inherit; } /* Comment.Single */
-    blockquote c-[cs] { color: inherit; } /* Comment.Special */
-    blockquote c-[kc] { color: inherit; } /* Keyword.Constant */
-    blockquote c-[kn] { color: inherit; } /* Keyword.Namespace */
-    blockquote c-[kp] { color: inherit; } /* Keyword.Pseudo */
-    blockquote c-[kr] { color: inherit; } /* Keyword.Reserved */
-    blockquote c-[ld] { color: inherit; } /* Literal.Date */
-    blockquote c-[nc] { color: inherit; } /* Name.Class */
-    blockquote c-[no] { color: inherit; } /* Name.Constant */
-    blockquote c-[nd] { color: inherit; } /* Name.Decorator */
-    blockquote c-[ni] { color: inherit; } /* Name.Entity */
-    blockquote c-[ne] { color: inherit; } /* Name.Exception */
-    blockquote c-[nf] { color: inherit; } /* Name.Function */
-    blockquote c-[nl] { color: inherit; } /* Name.Label */
-    blockquote c-[nn] { color: inherit; } /* Name.Namespace */
-    blockquote c-[py] { color: inherit; } /* Name.Property */
-    blockquote c-[ow] { color: inherit; } /* Operator.Word */
-    blockquote c-[mb] { color: inherit; } /* Literal.Number.Bin */
-    blockquote c-[mf] { color: inherit; } /* Literal.Number.Float */
-    blockquote c-[mh] { color: inherit; } /* Literal.Number.Hex */
-    blockquote c-[mi] { color: inherit; } /* Literal.Number.Integer */
-    blockquote c-[mo] { color: inherit; } /* Literal.Number.Oct */
-    blockquote c-[sb] { color: inherit; } /* Literal.String.Backtick */
-    blockquote c-[sc] { color: inherit; } /* Literal.String.Char */
-    blockquote c-[sd] { color: inherit; } /* Literal.String.Doc */
-    blockquote c-[se] { color: inherit; } /* Literal.String.Escape */
-    blockquote c-[sh] { color: inherit; } /* Literal.String.Heredoc */
-    blockquote c-[si] { color: inherit; } /* Literal.String.Interpol */
-    blockquote c-[sx] { color: inherit; } /* Literal.String.Other */
-    blockquote c-[sr] { color: inherit; } /* Literal.String.Regex */
-    blockquote c-[ss] { color: inherit; } /* Literal.String.Symbol */
-    blockquote c-[vc] { color: inherit; } /* Name.Variable.Class */
-    blockquote c-[vg] { color: inherit; } /* Name.Variable.Global */
-    blockquote c-[vi] { color: inherit; } /* Name.Variable.Instance */
-    blockquote c-[il] { color: inherit; } /* Literal.Number.Integer.Long */
   </style>
-  <meta content="Bikeshed version 5a2c04fbf9f3418b378c5d733b60fe6fc575091b" name="generator">
+  <meta content="Bikeshed version 9c6ae748322940994300e90a77c34437364b40a6" name="generator">
   <link href="https://wg21.link/P1687R1" rel="canonical">
   <link href="https://isocpp.org/favicon.ico" rel="icon">
+  <meta content="10943973b6a9de27d08cae2a1f17abb1214660e1" name="document-revision">
 <style>
 td {
   vertical-align: middle;
@@ -1502,27 +1444,27 @@ pre .property::before, pre .property::after {
 [data-link-type=biblio] {
     white-space: pre;
 }</style>
- </head><body class="h-entry toc-inline"><p id="toc-nav"><a id="toc-jump" href="https://api.csswg.org/bikeshed/#toc"><span aria-hidden="true">↑</span> <span>Jump to Table of Contents</span></a><a id="toc-toggle" href="https://api.csswg.org/bikeshed/#toc"><span aria-hidden="true">→</span> <span>Pop Out Sidebar</span></a></p>
+ <body class="h-entry">
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1 class="p-name no-ref" id="title">P1687R1<br>Summary of the Tooling Study Group’s Modules Ecosystem Technical Report Telecons</h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Published Proposal, <time class="dt-updated" datetime="2019-08-04">2019-08-04</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Published Proposal, <time class="dt-updated" datetime="2019-08-05">2019-08-05</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>Authors:
-     </dt><dd>
-      </dd><dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:brycelelbach@gmail.com">Bryce Adelstein Lelbach</a> (<span class="p-org org">NVIDIA</span>)
-     </dd><dd>
-      </dd><dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:ben.craig@gmail.com">Ben Craig</a>
-     </dd><dt>Source:
-     </dt><dd><a href="https://github.com/brycelelbach/wg21_p1687_summary_of_tooling_study_group_modules_ecosystem_tr_telecons/blob/master/summary_of_tooling_study_group_modules_ecosystem_tr_telecons.bs">GitHub</a>
-     </dd><dt>Issue Tracking:
-     </dt><dd><a href="https://github.com/brycelelbach/wg21_p1687_summary_of_tooling_study_group_modules_ecosystem_tr_telecons/issues">GitHub</a>
-     </dd><dt>Project:
-     </dt><dd>ISO/IEC JTC1/SC22/WG21 14882: Programming Language — C++
-     </dd><dt>Audience:
-     </dt><dd>EWG, SG2, SG15
-    </dd></dl>
+     <dd>
+      <dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:brycelelbach@gmail.com">Bryce Adelstein Lelbach</a> (<span class="p-org org">NVIDIA</span>)
+     <dd>
+      <dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:ben.craig@gmail.com">Ben Craig</a>
+     <dt>Source:
+     <dd><a href="https://github.com/brycelelbach/wg21_p1687_summary_of_tooling_study_group_modules_ecosystem_tr_telecons/blob/master/summary_of_tooling_study_group_modules_ecosystem_tr_telecons.bs">GitHub</a>
+     <dt>Issue Tracking:
+     <dd><a href="https://github.com/brycelelbach/wg21_p1687_summary_of_tooling_study_group_modules_ecosystem_tr_telecons/issues">GitHub</a>
+     <dt>Project:
+     <dd>ISO/IEC JTC1/SC22/WG21 14882: Programming Language — C++
+     <dt>Audience:
+     <dd>EWG, SG2, SG15
+    </dl>
    </div>
    <div data-fill-with="warning"></div>
    <hr title="Separator for header">
@@ -1530,18 +1472,18 @@ pre .property::before, pre .property::after {
   <nav data-fill-with="table-of-contents" id="toc">
    <h2 class="no-num no-toc no-ref" id="contents">Table of Contents</h2>
    <ol class="toc" role="directory">
-    <li><a href="https://api.csswg.org/bikeshed/#introduction"><span class="secno">1</span> <span class="content">Introduction</span></a>
-    </li><li><a href="https://api.csswg.org/bikeshed/#summary-of-meetings"><span class="secno">2</span> <span class="content">Summary of Meetings</span></a>
-    </li><li>
-     <a href="https://api.csswg.org/bikeshed/#meeting-minutes"><span class="secno">3</span> <span class="content">Meeting Minutes</span></a>
+    <li><a href="#introduction"><span class="secno">1</span> <span class="content">Introduction</span></a>
+    <li><a href="#summary-of-meetings"><span class="secno">2</span> <span class="content">Summary of Meetings</span></a>
+    <li>
+     <a href="#meeting-minutes"><span class="secno">3</span> <span class="content">Meeting Minutes</span></a>
      <ol class="toc">
-      <li><a href="https://api.csswg.org/bikeshed/#meeting-minutes-2019-08-02"><span class="secno">3.1</span> <span class="content">2019-08-02 Meeting Minutes</span></a>
-      </li><li><a href="https://api.csswg.org/bikeshed/#meeting-minutes-2019-06-21"><span class="secno">3.2</span> <span class="content">2019-06-21 Meeting Minutes</span></a>
-     </li></ol>
-   </li></ol>
+      <li><a href="#meeting-minutes-2019-08-02"><span class="secno">3.1</span> <span class="content">2019-08-02 Meeting Minutes</span></a>
+      <li><a href="#meeting-minutes-2019-06-21"><span class="secno">3.2</span> <span class="content">2019-06-21 Meeting Minutes</span></a>
+     </ol>
+   </ol>
   </nav>
   <main>
-   <h2 class="heading settled" data-level="1" id="introduction"><span class="secno">1. </span><span class="content">Introduction</span><a class="self-link" href="https://api.csswg.org/bikeshed/#introduction"></a></h2>
+   <h2 class="heading settled" data-level="1" id="introduction"><span class="secno">1. </span><span class="content">Introduction</span><a class="self-link" href="#introduction"></a></h2>
    <p>At the ISO C++ Kona 2019 meeting, the ISO C++ Committee’s Tooling Study Group,
   SG15, met to discuss concerns raised by various stakeholders about how
   modules would impact and interact with the broader C++ ecosystem (build
@@ -1554,465 +1496,465 @@ At the ISO C++ Cologne 2019 meeting, the Evolution Working Group approved
    <p>The Tooling Study Group has held a series of telecons to work on the Technical
   Report.
 This document contains a summary and detailed minutes for each of the telecons.</p>
-   <h2 class="heading settled" data-level="2" id="summary-of-meetings"><span class="secno">2. </span><span class="content">Summary of Meetings</span><a class="self-link" href="https://api.csswg.org/bikeshed/#summary-of-meetings"></a></h2>
+   <h2 class="heading settled" data-level="2" id="summary-of-meetings"><span class="secno">2. </span><span class="content">Summary of Meetings</span><a class="self-link" href="#summary-of-meetings"></a></h2>
    <table>
     <tbody>
      <tr>
       <th width="15%">Meeting 
-      </th><th width="45%">Agenda 
-      </th><th width="40%">Organizers 
-     </th></tr><tr>
+      <th width="45%">Agenda 
+      <th width="40%">Organizers 
+     <tr>
       <td> 2019-08-02 <a href="https://wg21.link/P1687R1#meeting-minutes-2019-08-02">Minutes</a> 
-      </td><td>
+      <td>
        <ul>
-        <li data-md="">
+        <li data-md>
          <p><a href="https://wg21.link/P1838">D1838R0: Modules User-Facing Lexicon and
 File Extensions</a>.</p>
-       </li></ul>
-      </td><td>
+       </ul>
+      <td>
        <ul>
-        <li data-md="">
+        <li data-md>
          <p><em>Chairing:</em> Bryce Adelstein Lelbach.</p>
-        </li><li data-md="">
+        <li data-md>
          <p><em>Minute Taker:</em> Ben Craig.</p>
-       </li></ul>
-     </td></tr><tr>
+       </ul>
+     <tr>
       <td> 2019-06-21 <a href="https://wg21.link/P1687R1#meeting-minutes-2019-06-21">Minutes</a> 
-      </td><td>
+      <td>
        <ul>
-        <li data-md="">
+        <li data-md>
          <p><a href="https://wg21.link/P1788">P1788: Built Module Distribution</a> (Olga Arkhipova).</p>
-        </li><li data-md="">
+        <li data-md>
          <p><a href="https://wg21.link/P1689">P1689: Dependency Format Specification</a> (Ben Boeckel).</p>
-       </li></ul>
-      </td><td>
+       </ul>
+      <td>
        <ul>
-        <li data-md="">
+        <li data-md>
          <p><em>Chairing:</em> Bryce Adelstein Lelbach.</p>
-        </li><li data-md="">
+        <li data-md>
          <p><em>Minute Taker:</em> Ben Craig.</p>
-       </li></ul>
-     </td></tr><tr>
+       </ul>
+     <tr>
       <td> 2019-06-07 <a href="https://wg21.link/P1687R0#meeting-minutes-2019-06-07">Minutes</a> 
-      </td><td>
+      <td>
        <ul>
-        <li data-md="">
+        <li data-md>
          <p>Plans for Pre-Cologne mailing papers.</p>
-        </li><li data-md="">
+        <li data-md>
          <p>Compiled Module Configuration (Michael Spencer).</p>
-        </li><li data-md="">
+        <li data-md>
          <p>New sg15@lists.isocpp.org mailing list.</p>
-       </li></ul>
-      </td><td>
+       </ul>
+      <td>
        <ul>
-        <li data-md="">
+        <li data-md>
          <p><em>Chairing:</em> Bryce Adelstein Lelbach.</p>
-        </li><li data-md="">
+        <li data-md>
          <p><em>Minute Taker:</em> Ben Craig.</p>
-       </li></ul>
-     </td></tr><tr>
+       </ul>
+     <tr>
       <td> 2019-05-24 <a href="https://wg21.link/P1687R0#meeting-minutes-2019-05-24">Minutes</a> 
-      </td><td>
+      <td>
        <ul>
-        <li data-md="">
+        <li data-md>
          <p>Compiled Module Distribution (Olga Arkhipova).</p>
-       </li></ul>
-      </td><td>
+       </ul>
+      <td>
        <ul>
-        <li data-md="">
+        <li data-md>
          <p><em>Chairing:</em> Bryce Adelstein Lelbach</p>
-        </li><li data-md="">
+        <li data-md>
          <p><em>Minute Taker:</em> Ben Craig</p>
-       </li></ul>
-     </td></tr><tr>
+       </ul>
+     <tr>
       <td> 2019-05-10 <a href="https://wg21.link/P1687R0#meeting-minutes-2019-05-10">Minutes</a> 
-      </td><td>
+      <td>
        <ul>
-        <li data-md="">
+        <li data-md>
          <p><a href="https://wg21.link/P1634">P1634: Module Naming</a> (Corentin Jabot).</p>
-       </li></ul>
-      </td><td>
+       </ul>
+      <td>
        <ul>
-        <li data-md="">
+        <li data-md>
          <p><em>Chairing:</em> Ben Craig</p>
-        </li><li data-md="">
+        <li data-md>
          <p><em>Minute Taker:</em> Ben Craig</p>
-       </li></ul>
-     </td></tr><tr>
+       </ul>
+     <tr>
       <td> 2019-04-26 <a href="https://wg21.link/P1687R0#meeting-minutes-2019-04-26">Minutes</a> 
-      </td><td>
+      <td>
        <ul>
-        <li data-md="">
+        <li data-md>
          <p>Distributed Build Systems (Ben Craig, Mathias Stearn).</p>
-        </li><li data-md="">
+        <li data-md>
          <p>Clang Modules and Module Maps (Richard Smith).</p>
-        </li><li data-md="">
+        <li data-md>
          <p>New sg15@lists.isocpp.org mailing list.</p>
-       </li></ul>
-      </td><td>
+       </ul>
+      <td>
        <ul>
-        <li data-md="">
+        <li data-md>
          <p><em>Chairing:</em> Bryce Adelstein Lelbach</p>
-        </li><li data-md="">
+        <li data-md>
          <p><em>Minute Taker:</em> Bryce Adelstein Lelbach, Ben Craig</p>
-       </li></ul>
-     </td></tr><tr>
+       </ul>
+     <tr>
       <td> 2019-04-12 <a href="https://wg21.link/P1687R0#meeting-minutes-2019-04-12">Minutes</a> 
-      </td><td>
+      <td>
        <ul>
-        <li data-md="">
+        <li data-md>
          <p>GCC Module Mapping:</p>
-        </li><li data-md="">
+        <li data-md>
          <p><a href="https://wg21.link/P1184">P1184: A Module Mapper</a> (Nathan Sidwell).</p>
-        </li><li data-md="">
+        <li data-md>
          <p><a href="https://wg21.link/P1602">P1602: Make Me A Module</a> (Nathan Sidwell).</p>
-        </li><li data-md="">
+        <li data-md>
          <p>New sg15@lists.isocpp.org mailing list.</p>
-       </li></ul>
-      </td><td>
+       </ul>
+      <td>
        <ul>
-        <li data-md="">
+        <li data-md>
          <p><em>Chairing:</em> Bryce Adelstein Lelbach</p>
-        </li><li data-md="">
+        <li data-md>
          <p><em>Minute Taker:</em> Ben Craig</p>
-       </li></ul>
-     </td></tr><tr>
+       </ul>
+     <tr>
       <td> 2019-04-05 <a href="https://wg21.link/P1687R0#meeting-minutes-2019-04-05">Minutes</a> 
-      </td><td>
+      <td>
        <ul>
-        <li data-md="">
+        <li data-md>
          <p><a href="https://wg21.link/P1689">P1689: Dependency Format Specification</a> (Ben Boeckel).</p>
-        </li><li data-md="">
+        <li data-md>
          <p>Logistics of drafting the proposed C++ Ecosystem Technical Report
 (format, repos, etc).</p>
-       </li></ul>
-      </td><td>
+       </ul>
+      <td>
        <ul>
-        <li data-md="">
+        <li data-md>
          <p><em>Chairing:</em> Bryce Adelstein Lelbach</p>
-        </li><li data-md="">
+        <li data-md>
          <p><em>Minute Taker:</em> Ben Craig</p>
-       </li></ul>
-     </td></tr><tr>
+       </ul>
+     <tr>
       <td> 2019-03-22 <a href="https://wg21.link/P1687R0#meeting-minutes-2019-03-22">Minutes</a> 
-      </td><td>
+      <td>
        <ul>
-        <li data-md="">
+        <li data-md>
          <p>Suggested outline for the proposed C++ Ecosystem Technical.</p>
-       </li></ul>
-      </td><td>
+       </ul>
+      <td>
        <ul>
-        <li data-md="">
+        <li data-md>
          <p><em>Chairing:</em> Ben Craig</p>
-        </li><li data-md="">
+        <li data-md>
          <p><em>Minute Taker:</em> Tom Honermann</p>
-       </li></ul>
-     </td></tr><tr>
+       </ul>
+     <tr>
       <td> 2019-03-08 <a href="https://wg21.link/P1687R0#meeting-minutes-2019-03-08">Minutes</a> 
-      </td><td>
+      <td>
        <ul>
-        <li data-md="">
+        <li data-md>
          <p>Schedule for pre-Cologne Tooling Study Group telecons.</p>
-        </li><li data-md="">
+        <li data-md>
          <p>Scope, priorities, and goals for the proposed C++ Ecosystem Technical Report.</p>
-       </li></ul>
-      </td><td>
+       </ul>
+      <td>
        <ul>
-        <li data-md="">
+        <li data-md>
          <p><em>Chairing:</em> Bryce Adelstein Lelbach</p>
-        </li><li data-md="">
+        <li data-md>
          <p><em>Minute Taker:</em> Ben Craig</p>
-       </li></ul>
-   </td></tr></tbody></table>
-   <h2 class="heading settled" data-level="3" id="meeting-minutes"><span class="secno">3. </span><span class="content">Meeting Minutes</span><a class="self-link" href="https://api.csswg.org/bikeshed/#meeting-minutes"></a></h2>
+       </ul>
+   </table>
+   <h2 class="heading settled" data-level="3" id="meeting-minutes"><span class="secno">3. </span><span class="content">Meeting Minutes</span><a class="self-link" href="#meeting-minutes"></a></h2>
    <p><strong>Minutes omitted from this revision can be found in prior revisions:</strong></p>
    <ul>
-    <li data-md="">
+    <li data-md>
      <p><a href="https://wg21.link/P1687R0"><b>P1687R0: 2019-03-08 through 2019-06-07</b></a>.</p>
-   </li></ul>
-   <h3 class="heading settled" data-level="3.1" id="meeting-minutes-2019-08-02"><span class="secno">3.1. </span><span class="content">2019-08-02 Meeting Minutes</span><a class="self-link" href="https://api.csswg.org/bikeshed/#meeting-minutes-2019-08-02"></a></h3>
+   </ul>
+   <h3 class="heading settled" data-level="3.1" id="meeting-minutes-2019-08-02"><span class="secno">3.1. </span><span class="content">2019-08-02 Meeting Minutes</span><a class="self-link" href="#meeting-minutes-2019-08-02"></a></h3>
    <p><strong>Attendance:</strong></p>
    <ul>
-    <li data-md="">
+    <li data-md>
      <p>Ben Craig</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Bryce Adelstein Lelbach (NVIDIA)</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Ben Boeckel (Kitware)</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Gabriel Dos Reis (Microsoft)</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Mathias Stearn</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Boris Kolpackov (build2)</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Bruno Lopes (Apple, Clang/LLVM)</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Tom Honermann (Synopsys)</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Rene Rivera (boost.build)</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Mark Zeren (VMWare)</p>
-    </li><li data-md="">
+    <li data-md>
      <p>JF Bastien (Apple, Clang/LLVM)</p>
-   </li></ul>
+   </ul>
    <p><strong>Chair Notes (Bryce Adelstein Lelbach):</strong></p>
    <p>Agenda:</p>
    <ul>
-    <li data-md="">
+    <li data-md>
      <p>2019-07 Cologne summary:</p>
      <ul>
-      <li data-md="">
+      <li data-md>
        <p><a href="http://wiki.edg.com/bin/view/Wg21cologne2019/P1688R0-EWG">EWG review of P1688</a>.</p>
-      </li><li data-md="">
+      <li data-md>
        <p><a href="http://wiki.edg.com/bin/view/Wg21cologne2019/SG15">Friday SG15 session</a>.</p>
-     </li></ul>
-    </li><li data-md="">
+     </ul>
+    <li data-md>
      <p>2019-09-21 Denver CppCon meeting.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Post-Cologne mailing (2019-08-05):</p>
      <ul>
-      <li data-md="">
+      <li data-md>
        <p>P1687: Tooling Telecon Minutes (Bryce Adelstein Lelbach, Ben Craig).</p>
-      </li><li data-md="">
+      <li data-md>
        <p>P1689: Dependency Information Format (Ben Boeckel).</p>
-      </li><li data-md="">
+      <li data-md>
        <p>Generalized Module Mapper (Boris Kolpackov).</p>
-     </li></ul>
-    </li><li data-md="">
+     </ul>
+    <li data-md>
      <p>D1838R0: Modules User-Facing Lexicon and File Extensions.</p>
      <ul>
-      <li data-md="">
+      <li data-md>
        <p>CMI/BMI bikeshedding.</p>
-      </li><li data-md="">
+      <li data-md>
        <p>File extensions.</p>
-     </li></ul>
-   </li></ul>
+     </ul>
+   </ul>
    <p><strong>POLL: Which names can you tolerate? (Vote as many times as you like)</strong></p>
    <table>
     <tbody>
      <tr>
       <th>Name 
-      </th><th>Votes 
-     </th></tr><tr>
+      <th>Votes 
+     <tr>
       <td>Binary Module Interface (BMI)
-      </td><td>10 
-     </td></tr><tr>
+      <td>10 
+     <tr>
       <td>Built Module Interface (BMI)
-      </td><td>8 
-     </td></tr><tr>
+      <td>8 
+     <tr>
       <td>Compiled Module Interface (CMI)
-      </td><td>6 
-     </td></tr><tr>
+      <td>6 
+     <tr>
       <td>PreCompiled Module (PCM)
-      </td><td>4 
-     </td></tr><tr>
+      <td>4 
+     <tr>
       <td>Module Interface Metadata (MIM)
-      </td><td>3 
-     </td></tr><tr>
+      <td>3 
+     <tr>
       <td>Module Interface Cache (MIC)
-      </td><td>4 
-     </td></tr><tr>
+      <td>4 
+     <tr>
       <td>Importable Module Artifact (IMA)
-      </td><td>9 
-   </td></tr></tbody></table>
+      <td>9 
+   </table>
    <p><strong>POLL: Which name do you prefer?</strong></p>
    <table>
     <tbody>
      <tr>
       <th>Name 
-      </th><th>Votes 
-     </th></tr><tr>
+      <th>Votes 
+     <tr>
       <td>Binary Module Interface (BMI)
-      </td><td>5 
-     </td></tr><tr>
+      <td>5 
+     <tr>
       <td>Built Module Interface (BMI)
-      </td><td>5 
-     </td></tr><tr>
+      <td>5 
+     <tr>
       <td>Importable Module Artifact (IMA)
-      </td><td>1 
-   </td></tr></tbody></table>
+      <td>1 
+   </table>
    <p><strong>CONSENSUS: We like the acronym BMI.</strong></p>
    <p>Action Items:</p>
    <ul>
-    <li data-md="">
+    <li data-md>
      <p>Publish P1687R1 with minutes from the 2019-06-21 and 2019-08-02 telecon (Bryce).</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Publish new paper with details of the 2019-09-21 Denver CppCon meeting (Bryce).</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Share D1833R0 with everybody in the Tooling Study Group (Bryce).</p>
-   </li></ul>
+   </ul>
    <p><strong>Minutes (Ben Craig):</strong></p>
    <ul>
-    <li data-md="">
+    <li data-md>
      <p>Bryce: Denver CppCon meeting. Consensus is Saturdat after CppCon 2019. Sep 21. Will try to have a telecon presence. Will set up a pseudo mailing deadline. Limiting to the modules ecosystem TR.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Bryce: Who is sending papers to the post-Cologne mailing (which is Monday)?</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Ben B: Planning on getting P1689 into the post meeting mailing.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Boris: Planning on having a paper for generic module mapper.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Bryce: Today we are discussing the modules lexicon paper. Want to have shared terminology in preparation for CppCon.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Ben C: I just want consistency.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Tom: I do like PCM because it’s sort of like precompiled headers.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Gaby: Because of that, I would go in the opposite direction. Like CMI, since it doesn’t need to be stored in a binary form.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Mathias: How do we name the act of generating the BMI / CMI? How do we need to name the act of making an object file?</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Bryce: Some impls have distance steps for making obj and CMI, some impls have one step.</p>
-    </li><li data-md="">
-     <p>Ben B: Fortran uses two step.</p>
-    </li><li data-md="">
+    <li data-md>
+     <p>Ben B: Fortran compilers use a single step for obj and CMI.</p>
+    <li data-md>
      <p>General disagreement on which is more efficient.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Mathias: Been thinking of obj production as "compiling" and CMI production as extracting.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Gaby: Maybe "metadata" instead (module interface metadata?).</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Boris: What is meta about it? what is the data?</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Gaby: Prior art, it’s meta in the sense that it isn’t the .obj.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Ben B: Module interface cache? Interfaces the transient nature.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Gaby: Would need to distinguish the term in caching systems.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Ben B: Importable Module Artifact?</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Boris: We should keep in mind that there are a lot of existing documents that use BMI.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>If we don’t have a significantly better term, we should prefer the status quo.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>If we want to be precise, then this doesn’t always apply to module, but also to headers.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Bruno: I like binary because it could mean metadata or machine code, where compiled gives impression of machine code.</p>
-   </li></ul>
+   </ul>
    <p><strong>POLL: Which names can you tolerate? (Vote as many times as you like)</strong></p>
    <table>
     <tbody>
      <tr>
       <th>Name 
-      </th><th>Votes 
-     </th></tr><tr>
+      <th>Votes 
+     <tr>
       <td>Binary Module Interface (BMI)
-      </td><td>10 
-     </td></tr><tr>
+      <td>10 
+     <tr>
       <td>Built Module Interface (BMI)
-      </td><td>8 
-     </td></tr><tr>
+      <td>8 
+     <tr>
       <td>Compiled Module Interface (CMI)
-      </td><td>6 
-     </td></tr><tr>
+      <td>6 
+     <tr>
       <td>PreCompiled Module (PCM)
-      </td><td>4 
-     </td></tr><tr>
+      <td>4 
+     <tr>
       <td>Module Interface Metadata (MIM)
-      </td><td>3 
-     </td></tr><tr>
+      <td>3 
+     <tr>
       <td>Module Interface Cache (MIC)
-      </td><td>4 
-     </td></tr><tr>
+      <td>4 
+     <tr>
       <td>Importable Module Artifact (IMA)
-      </td><td>9 
-   </td></tr></tbody></table>
+      <td>9 
+   </table>
    <ul>
-    <li data-md="">
+    <li data-md>
      <p>Gaby: We’ll need to use this in the context of builds. When we talk about headers / modules, the word module might confuse things.</p>
-   </li></ul>
+   </ul>
    <p><strong>POLL: Which name do you prefer?</strong></p>
    <table>
     <tbody>
      <tr>
       <th>Name 
-      </th><th>Votes 
-     </th></tr><tr>
+      <th>Votes 
+     <tr>
       <td>Binary Module Interface (BMI)
-      </td><td>5 
-     </td></tr><tr>
+      <td>5 
+     <tr>
       <td>Built Module Interface (BMI)
-      </td><td>5 
-     </td></tr><tr>
+      <td>5 
+     <tr>
       <td>Importable Module Artifact (IMA)
-      </td><td>1 
-   </td></tr></tbody></table>
+      <td>1 
+   </table>
    <ul>
-    <li data-md="">
+    <li data-md>
      <p>BMI abbreviation seems to win.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Rene: Since this might end up as a file extension we might want to keep in mind this: IMA (Mirage vector graphics  EGO - Chart - Autumn), IMA (Disk image WinImage).</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Ben B: Why does it have to stand for anything? Just call it BMI.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Bryce: Current status quo is that interface units have a different extension?</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Gaby: Only the interface has a different extension.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Mathias: What are importable implementation units: Named partitions that are not exported Seem to behave more like interface units, because you need a BMI for them For anything that is importable. Even implementation units can be imported. Maybe don’t do it at all?</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Gaby: MSVC has distinct extensions to make other tools easier. Can’t change Visual Studio to not care about extension.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Mathias: Not proposing that it doesn’t have an extension, just proposing that it doesn’t have a different extension.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Gaby: Interfaces get treated a bit different from headers and implementation files. Treating an interface file as a header file isn’t adequate semantically.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Tom: This is for driving build systems?</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Gaby: This is for driving the editor and the compiler. Without the extension, you need more compiler switches to disambiguate.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Boris: @Bryce: I don’t believe GCC uses .cppm, I think you meant Clang? AFAIK, GCC/Nathan does not suggest a separate extension.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Bryce: Overloading what .cpp means too much seems unnecessary.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Gaby: Didn’t do this lightly in 2015.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Different extension seems useful. Suggesting .cmi.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Ben C: Cost to existing editors that don’t recognize the extension.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Mark: Cost goes both ways, in that editors and tools can’t specialize.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Mathias: Reduced scanning on non-importable units.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Ben B: You have to scan anything that could import as well.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Mathias: That would be my argument that you keep all the extensions the same,.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>since all need to be scanned anyway.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Tom: Need to support build systems without a scan step. Whole world isn’t going to transition to cmake.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Ben B: A two or three level recursive make may be able to pull off scanning. I want to make a paper that says how our generated makefiles work.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Bryce: On produced files, hopefully the implementations will coallesce on an extension. MSVC uses .ifc. Want to avoid .o or .obj mismatch, but this isn’t as high of a priority. GCC doesn’t seem to support telling it which extension to use.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Gaby: Implementation unit, I see .cpp and .mxx. GCC allows .cc and .cxx.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Bryce: Not currently exhaustive. .cpp is a placeholder for all the existing extensions.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Ben B: GCC uses gcm, gcmu, or gcms depending on the type.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Boris: I think Nathan changed that.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Ben B: Default module mapper uses CWD and makes up names, if you give it a module map, it uses that.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Boris: @Bryce: with GCC you can write the BMI to any file (any name/extension, etc) using the module mapper.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Bikeshedding over "Dependency Metadata" / "Dependency Information".</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Mathias: Rather not use implicit vs. explicit for this distinction. Explicit sounds like users are managing it.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Maybe compiler managed, build system managed, user managed.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Some discussion over merging Mathias’s categories.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Gaby: Please don’t use the terms implicit and explicit terms for "Implicit Modules" and "Explicit Modules".</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Bryce: This should probably be considered anti-terminology.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>
       Ben C: Need different words for textual #include 
       <foo>
@@ -2020,211 +1962,211 @@ File Extensions</a>.</p>
        <foo>, and module import foo;.</foo>
       </foo>
      </p>
-   </li></ul>
-   <h3 class="heading settled" data-level="3.2" id="meeting-minutes-2019-06-21"><span class="secno">3.2. </span><span class="content">2019-06-21 Meeting Minutes</span><a class="self-link" href="https://api.csswg.org/bikeshed/#meeting-minutes-2019-06-21"></a></h3>
+   </ul>
+   <h3 class="heading settled" data-level="3.2" id="meeting-minutes-2019-06-21"><span class="secno">3.2. </span><span class="content">2019-06-21 Meeting Minutes</span><a class="self-link" href="#meeting-minutes-2019-06-21"></a></h3>
    <p><strong>Attendance:</strong></p>
    <ul>
-    <li data-md="">
+    <li data-md>
      <p>Ben Craig</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Bryce Adelstein Lelbach (NVIDIA)</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Ben Boeckel (Kitware)</p>
-    </li><li data-md="">
+    <li data-md>
      <p>David Blaikie (Google, Clang/LLVM)</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Rene Rivera (Boost.Build)</p>
-    </li><li data-md="">
+    <li data-md>
      <p>JF Bastien (Apple, Clang/LLVM)</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Lukasz Mendakiewicz (Microsoft, MSVC)</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Nathan Sidwell (Facebook, GCC)</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Tom Honermann (Synopsys)</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Olga Arkhipova (Microsoft)</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Steve Downey</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Mark Zeren (VMWare)</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Michael Spencer (Apple, Clang/LLVM)</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Matthew Woelke (Kitware)</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Richard Smith (Google, Clang/LLVM)</p>
-   </li></ul>
+   </ul>
    <p><strong>Chair Notes (Bryce Adelstein Lelbach):</strong></p>
    <ul>
-    <li data-md="">
+    <li data-md>
      <p>Agenda:</p>
-    </li><li data-md="">
+    <li data-md>
      <p>New mailing list on lists.isocpp.org.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Cologne prep</p>
      <ul>
-      <li data-md="">
+      <li data-md>
        <p>Who actually sent papers?</p>
-      </li><li data-md="">
+      <li data-md>
        <p>Review Ben’s Dependency Metadata Paper (P1689).</p>
-      </li><li data-md="">
+      <li data-md>
        <p>Review Olga’s BMI Distribution Paper (P1788).</p>
-      </li><li data-md="">
+      <li data-md>
        <p>Review Richard’s Packaging Paper (P1767).</p>
-     </li></ul>
-    </li><li data-md="">
+     </ul>
+    <li data-md>
      <p>Next (last) Pre-Cologne call is July 5th (reschedule?).</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Pre-Cologne Papers (Send Drafts to sg15@lists.isocpp.org by 2019-06-14):</p>
-    </li><li data-md="">
+    <li data-md>
      <p>P1687: Summary and Minutes of Pre-Cologne SG15 Discussions (Bryce, Ben C).</p>
-    </li><li data-md="">
+    <li data-md>
      <p>P1688: Ecosystem Technical Report Outline (Bryce).</p>
-    </li><li data-md="">
+    <li data-md>
      <p>P1689: Dependency Metadata (Ben B).</p>
-    </li><li data-md="">
+    <li data-md>
      <p>P1788: Compiled Module Reuse (Olga, Lukasz).</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Module Naming (Corentin Jabot).</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Modules Hello World (Gaby).</p>
-    </li><li data-md="">
+    <li data-md>
      <p>P1767: Modules and Packaging (Richard).</p>
-    </li><li data-md="">
+    <li data-md>
      <p>RFE: (Paper or info on) Implicit Modules (Michael).</p>
      <ul>
-      <li data-md="">
+      <li data-md>
        <p>Michael gave a talk at LLVM Euro about this.</p>
-     </li></ul>
-   </li></ul>
+     </ul>
+   </ul>
    <p><strong>Minutes (Ben Craig):</strong></p>
    <p>Ben Boeckel presents <a href="https://wg21.link/P1689">P1689</a>.</p>
    <ul>
-    <li data-md="">
+    <li data-md>
      <p>Bryce: Did the unicode stuff come up last time, and did you talk to the unicode group?</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Ben B: It was discussed on slack.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Tom: Worth a small presentation to SG16, looks like a good approach to the problem.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Bryce: Unfortunate that this paper needs to deal with it, as it seems like a JSON problem.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Tom: Beyond the scope of just json. It’s something that has come up in other contexts too.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Bryce: working directory and chroot stuff is new, right?</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Ben B: yes.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Ben B: future compile and future link are new. Want to be able to support #pragma comment for auto linking.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Zeren: How important is windows auto linking? We rip it out of boost.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Ben B: It came up in slack, I’m not super attached to it.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Olga: I don’t know if it’s needed.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Nathan: Could be something in vendor extensions.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Ben B: vendor extensions are supposed to be ignorable.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Ben B: May be able to leave auto linking out of the first version.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Ben C: Maybe std::embed like cases?</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Ben B: I don’t think a C++ file mentions linker embedded things.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Ben C: Agreed. Withdrawn.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Tom: Seems like a good vendor extension to me.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Bryce: Doesn’t seem to come up with our weird heterogenous context.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Rene: shouldn’t the vendor extensions say whether it is required or not?</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Ben B: For vendor extensions, if it is required and necessary for a correct build, then we wouldn’t know how to turn that into something to make ninja or make work.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Bryce: Similar to C++ attributes.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Tom: These are intended to be transient files. Not meant to be shipped out. May even be piped and not stored on file system.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Ben B: yes.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Bryce: Never seen anyone store off a makefile database to be used later.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Rene: I have.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Rene: The unreal build system will serialize out some intermediate files and use the same one repeatedly.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Bryce: Just trying to ensure that the intent is that this file doesn’t go into source control.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Ben B: tup is a build tool where each rule gets a chroot, they will need to use the working directory in interesting ways.</p>
-   </li></ul>
+   </ul>
    <p>Olga and Lukasz present <a href="https://wg21.link/P1788">P1788</a>.</p>
    <ul>
-    <li data-md="">
+    <li data-md>
      <p>Bryce: Have LLVM people had a chance to see the paper?</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Spencer: Yes, mostly makes sense. Nothing in here surprising or hard?</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Tom: Looking at the recommendation to library vendors, does LLVM agree that it is ok to ship BMIs as an optimization?</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Spencer: Yes, that’s fine. BMI as an optimization is fine.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Tom: Will you ignore them if they are inappropriate?</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Spencer: You will get an error if you give us a bad one explicitly, we will rebuild if it is implicit. We can’t easily rebuild for explicit, because we don’t know how to build it correctly.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Tom: You could ask the BMI how to build it.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Ben C: But that information is only how to build that BMI, now how to build it correctly.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Richard S: Including env and working directory could be trouble. We need bit for bit build reproducability, even when different working directories are used to build on different machines.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Tom: May also need to include which important env variables are unset, so that those can be cleared.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>David: Distributing prebuilt modules as an optimization... sounded like a bit of a disconnect. In explicit modules world, the scanning or oracle system would need to be able to see if those BMIs are suitable or not. If the prebuilt modules are good, the scan would report that prebuilt module.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Nathan: I’ve started putted in human readable section of BMI things like working directory. It doesn’t effect the CRCs, and those sections could be stripped to possibly get bit for bit reproducability.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Bryce: Is this something that GCC can get on board with?</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Nathan: Putting information to rebuild from source may only want to be done explicitly, because it might be expensive, and it might be a secret.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Tom: Would you be amenable to adding an ENV variable to get that information into a BMI.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Tom: Intent is that all of the source needs to get into a BMI. Particularly because of header files that went into it.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Nathan: Already hit issues where header files of library on producing machine are different from header files on consuming machine.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Tom: We really need all the source.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Olga: Could include the header file paths.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Tom: But those files may not be available on the consuming machine.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Lukasz: Debugger has some hashes. May want to be able to ignore whitespace changes.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Olga: Directory structure of location where BMI is built may be different than directory structure where BMI is used?</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Olga: If you can’t find those files using the command line, then full paths won’t help. Are you asking for the BMI to include the source itself?</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Nathan: compiler vendors may want that to be able to deal with bug reports.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Matthew W: Should be a way for linux distros to point to them instead of vendoring them.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Nathan: My experience is with multiple red hat based systems that are still different enough to cause problems.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Matthew W: Wanted to go back and say something about whether you can use a prebuilt BMI. I would punt on the problem. Wouldn’t have the scanning tool fix it. Let the compiler have something like ccache sitting in front of it that looks in a cache to see if the compile line is compatible. If it’s not there then it can be built at that time.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Steve D: Anyone shipping a BMI has to be prepared to have consumers rebuild the BMI. It’s an important optimization, but the BMI can’t be trusted... you need to be ready to scrap it and rebuild it.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Bryce: Main point of contentions are the "Other build options" bullet point and "module source" bullet point.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Olga: Those things can be ignored by users, but I need to think about it.</p>
-    </li><li data-md="">
+    <li data-md>
      <p>Tom: There are certainly copyright concerns.</p>
-   </li></ul>
+   </ul>
   </main>
 <script>
 (function() {
@@ -2354,4 +2296,4 @@ File Extensions</a>.</p>
   }
 
 })();
-</script></body></html>
+</script>

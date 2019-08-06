@@ -333,7 +333,7 @@ Action Items:
 - Mathias: How do we name the act of generating the BMI / CMI? How do we need to name the act of making an object file?
 
 - Bryce: Some impls have distance steps for making obj and CMI, some impls have one step.
-- Ben B: Fortran uses two step.
+- Ben B: Fortran compilers use a single step for obj and CMI.
 
 - General disagreement on which is more efficient.
 
